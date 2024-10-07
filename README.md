@@ -54,7 +54,7 @@ If you prefer to run the application directly on your local machine, follow thes
 
 ### Prerequisites:
 
-- **Node.js** (version 14+)
+- **Node.js** (version 21+)
 - **MongoDB** installed locally (Ensure it is running on port 27017 or update the environment variable accordingly)
 
 ### Steps:
