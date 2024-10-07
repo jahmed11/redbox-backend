@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  todo_app:
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.production
+    depends_on:
+      - mongodb
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:7.0
+    volumes:
+    - ~/mongo:/data/db
+    ports:
+    - "27017:27017"
