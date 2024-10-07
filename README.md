@@ -25,7 +25,7 @@ Docker allows you to easily run the application without installing dependencies 
 
     ```bash
     # .env.production
-    MONGODB_URI=mongodb://mongodb:27017/todo_app
+    MONGODB_URI=mongodb://mongodb:27017/REDBOX
     PORT=3000
     ```
 
@@ -70,7 +70,7 @@ If you prefer to run the application directly on your local machine, follow thes
 
     ```bash
     # .env
-    MONGODB_URI=mongodb://localhost:27017/todo_app
+    MONGODB_URI=mongodb://localhost:27017/REDBOX
     PORT=3000
     ```
 
@@ -83,7 +83,7 @@ If you prefer to run the application directly on your local machine, follow thes
 4. Start the MongoDB server if it's not already running:
 
     ```bash
-    mongod
+    brew services start mongodb-community
     ```
 
 5. Run the application:
